@@ -1,7 +1,7 @@
-# runway_simulator_java
+# Apron Traffic Simulation
 
 This is group project for a software development class
-- I was reponsible to implement the behavior tree
+- I was responsible to implement the behavior tree
 
 
 # Project Description
