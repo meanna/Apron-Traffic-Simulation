@@ -1,5 +1,11 @@
 # runway_simulator_java
 
+This is group project for a software development class
+- I was reponsible to implement the behavior tree
+
+
+# Project Description
+
 Das Hauptprojekt des Praktikums ist eine Rollfeld Simulation
 (engl. Apron Traffic Simulation). Alle Flugzeugbewegung auf
 dem Rollfeld des Flughafens werden für einen Tag simuliert
