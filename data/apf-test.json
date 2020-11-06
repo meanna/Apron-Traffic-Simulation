@@ -1,0 +1,123 @@
+{
+  "airport": {
+    "info": "Beispiel1: 2 Fluge mit 2 Flugzeugtypen.",
+    "inbound": 600,
+    "outbound": 300,
+    "pushbacklag": 12,
+    "pushbackspeed": 3.2,
+    "safetyground": 40.0,
+    "safetywaketurbulence": [
+      {
+        "predecessor": "medium",
+        "follower": "medium",
+        "distance": 3
+      },
+      {
+        "predecessor": "medium",
+        "follower": "heavy",
+        "distance": 3
+      },
+      {
+        "predecessor": "heavy",
+        "follower": "medium",
+        "distance": 5
+      },
+      {
+        "predecessor": "heavy",
+        "follower": "heavy",
+        "distance": 4
+      }
+    ]
+  },
+  "planes": [
+    {
+      "type": "Dash8-Q200",
+      "wingspan": 25.9,
+      "length": 22.25,
+      "wakecat": "medium",
+      "flightspeed": 1020,
+      "acceleration": 0.21,
+      "safety": 3.75,
+      "limits": [
+        {
+          "speed": 50,
+          "degree": 30
+        },
+        {
+          "speed": 20,
+          "degree": 90
+        }
+      ]
+    },
+    {
+      "type": "A350-900",
+      "wingspan": 64.75,
+      "length": 66.89,
+      "wakecat": "heavy",
+      "flightspeed": 140,
+      "acceleration": 0.15,
+      "safety": 4,
+      "limits": [
+        {
+          "speed": 40,
+          "degree": 30
+        },
+        {
+          "speed": 10,
+          "degree": 75
+        },
+        {
+          "speed": 5,
+          "degree": 90
+        }
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "aircraft": "A350-900",
+      "schedule": [
+        {
+          "waypoint": "runway1",
+          "time": 21000
+        },
+        {
+          "waypoint": "gate20",
+          "duration": 1200,
+          "priority": 1
+        },
+        {
+          "waypoint": "gate20",
+          "time": 24000,
+          "duration": 900
+        },
+        {
+          "waypoint": "deicing",
+          "duration": 300
+        },
+        {
+          "waypoint": "runway2",
+          "time": 24600,
+          "priority": -3
+        }
+      ]
+    },
+    {
+      "aircraft": "Dash8-Q300",
+      "schedule": [
+        {
+          "waypoint": "runway1",
+          "time": 21000
+        },
+        {
+          "waypoint": "gatesBlissAir",
+          "time": 21700,
+          "duration": 800
+        },
+        {
+          "waypoint": "runway1"
+        }
+      ]
+    }
+  ]
+}
