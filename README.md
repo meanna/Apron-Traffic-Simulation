@@ -1,6 +1,6 @@
 # Apron Traffic Simulation
 
-This is group project for a software development course at my university
+This is a group project for a software development course at my university.
 - I was responsible for implementing the behavior tree
 
 
