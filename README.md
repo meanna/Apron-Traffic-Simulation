@@ -1,7 +1,7 @@
 # Apron Traffic Simulation
 
-This is group project for a software development class
-- I was responsible to implement the behavior tree
+This is group project for a software development course at my university
+- I was responsible for implementing the behavior tree
 
 
 # Project Description
